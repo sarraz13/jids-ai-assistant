@@ -1,0 +1,13 @@
+
+            Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. 
+            Built by experienced developers, it takes care of much of the hassle of web development, so you can focus 
+            on writing your app without needing to reinvent the wheel. It's free and open source.
+            
+            Django's primary goal is to ease the creation of complex, database-driven websites. 
+            The framework emphasizes reusability and "pluggability" of components, less code, low coupling, 
+            rapid development, and the principle of don't repeat yourself (DRY).
+            
+            Python is used throughout, even for settings, files, and data models. 
+            Django also provides an optional administrative create, read, update and delete interface 
+            that is generated dynamically through introspection and configured via admin models.
+            

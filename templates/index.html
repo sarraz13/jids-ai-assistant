@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jids - Your AI Assistant</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+
+<!-- Landing Screen -->
+<div class="landing-screen" id="landingScreen">
+  <img src="{% static 'img/logo.png' %}" alt="Jids Logo">
+  <h1>Welcome to Jids</h1>
+  <p>Your intelligent AI assistant, ready to help</p>
+  <button class="get-started-btn" onclick="showNameScreen()">Get Started</button>
+</div>
+
+<!-- Name Input Screen -->
+<div class="name-screen hidden" id="nameScreen">
+  <img src="{% static 'img/logo.png' %}" alt="Jids Logo">
+  <h2>Nice to meet you!</h2>
+  <p>What should I call you?</p>
+  <div class="name-input-container">
+    <input type="text" id="nameInput" placeholder="Enter your name" onkeypress="if(event.key==='Enter') saveName()">
+    <button onclick="saveName()">Continue</button>
+  </div>
+</div>
+
+<!-- Chat Container -->
+<div class="chat-container hidden" id="chatContainer">
+  <div class="chat-header">
+    <img src="{% static 'img/logo.png' %}" alt="Jids Logo">
+    <div class="chat-header-text">
+      <h3>Jids</h3>
+      <p id="welcomeText">Welcome!</p>
+    </div>
+  </div>
+  
+  <div class="messages" id="messages"></div>
+  
+  <div class="input-area">
+    <button class="file-upload-btn" onclick="document.getElementById('fileInput').click()" title="Upload file">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
+      </svg>
+    </button>
+    <input type="file" id="fileInput" onchange="handleFileSelect(event)">
+    <span class="file-name-display" id="fileNameDisplay"></span>
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button class="send-btn" onclick="sendMessage()">
+      <span>Send</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
