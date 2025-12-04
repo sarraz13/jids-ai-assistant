@@ -27,7 +27,6 @@ A sophisticated Django-based AI assistant that can read, understand, and answer 
 ### Installation
 
 1. **Clone the repository**
-bash
 git clone https://github.com/sarraz13/jids-ai-assistant.git
 cd jids-ai-assistant
 Set up virtual environment
@@ -43,11 +42,11 @@ Mac/Linux:
 source venv/bin/activate
 Install dependencies
 
-bash
+
 pip install -r requirements.txt
 Configure environment variables
 
-bash
+
 # Copy the example environment file
 cp .env.example .env
 
@@ -55,15 +54,12 @@ cp .env.example .env
 Use any text editor to add: OPENAI_API_KEY=your_actual_key_here
 # Set up the database
 
-bash
 python manage.py migrate
 Start the development server
 
-bash
 python manage.py runserver
 Open in your browser
 
-text
 http://localhost:8000
 🎯 Usage Guide
 First Time Setup
