@@ -7,17 +7,17 @@
 
 A sophisticated Django-based AI assistant that can read, understand, and answer questions from uploaded documents using Retrieval-Augmented Generation (RAG).
 
-## ✨ Features
+##  Features
 
-- **💬 Intelligent Chat Interface** - Conversational AI assistant with context awareness
-- **📁 Multi-format Document Support** - Upload and process PDF, TXT, DOCX files
-- **🔍 Semantic Document Search** - Find relevant information across all uploaded documents
-- **🎯 RAG-powered Answers** - Responses grounded in your document content
-- **💾 Session Management** - Persistent chat history across sessions
-- **📱 Responsive UI** - Clean, modern interface that works on all devices
-- **🔐 Secure File Handling** - Temporary file storage with automatic cleanup
+- ** Intelligent Chat Interface** - Conversational AI assistant with context awareness
+- ** Multi-format Document Support** - Upload and process PDF, TXT, DOCX files
+- ** Semantic Document Search** - Find relevant information across all uploaded documents
+- ** RAG-powered Answers** - Responses grounded in your document content
+- ** Session Management** - Persistent chat history across sessions
+- ** Responsive UI** - Clean, modern interface that works on all devices
+- ** Secure File Handling** - Temporary file storage with automatic cleanup
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8 or higher
